@@ -29,8 +29,8 @@ Dataset clásico de la FIFA World Cup (Kaggle): ediciones, partidos y jugadores.
 
 ##  Hallazgos
 - **El Mundial que más llenó los estadios fue USA 1994.** Tiene el récord de asistencia
-  total de la historia, y al calcular la asistencia media por partido sigue siendo el número uno:
-  es el más taquillero lo mires por donde lo mires.
+  total de la historia (y eso que se jugaron menos partidos que sus posteriores mundiales: 24 vs 32), y al calcular la asistencia media por partido sigue siendo el número uno:
+  es el más taquillero lo mires por donde lo mires. La asistencia media por partido verifica que fue probablemente por la capacidad de los estadios.
 - **Brasil es la selección con más títulos (5).** Le siguen Italia y Alemania con 4 cada una,
   y Argentina con 3 (incluyendo su victoria en 2022).
 - **Lección de limpieza de datos:** en los datos originales, "Germany FR" (Alemania Occidental)
