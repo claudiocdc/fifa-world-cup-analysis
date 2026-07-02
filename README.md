@@ -21,7 +21,7 @@ Dataset clásico de la FIFA World Cup (Kaggle): ediciones, partidos y jugadores.
 - **Detalle de partidos y jugadores**: disponible hasta **2014** (limitación del dataset original).
 - Las ediciones 2018 y 2022 se añadieron manualmente desde fuentes oficiales (FIFA / Wikipedia).
 
- ##  Llimpieza
+ ##  Limpieza
 - Eliminé ~3.700 filas vacías de la tabla de partidos.
 - Corregí nombres de equipos corruptos (un prefijo `rn">` que arrastraba el dataset original).
 - Unifiqué "Germany FR" y "Germany" como un mismo país para que saliese correctamente los recuentos.
@@ -39,6 +39,11 @@ Dataset clásico de la FIFA World Cup (Kaggle): ediciones, partidos y jugadores.
 - **Brasil es la única selección que ha jugado las 20 ediciones (1930–2014).**
   Le siguen Italia (18) y Argentina (16). Lo calculé combinando las apariciones
   como local y visitante (partidos) y contando los años únicos de cada país.
+- **Alemania es la máxima goleadora de la historia de los Mundiales**, por delante de Brasil.
+  Curiosamente, este dato solo aparece tras unificar "Germany FR" y "Germany", que el dataset
+  contaba como países distintos, un recordatorio de que la limpieza de datos es importante.
+- **El partido más goleador de la historia fue Austria 7–5 Suiza (1954): 12 goles**, todos en los
+  90 minutos reglamentarios y 9 de ellos antes del descanso.
 
 ##  Estructura del repositorio
 - `01_Limpieza_Fifa_WorldCup.ipynb` — limpieza de datos y primeras métricas
