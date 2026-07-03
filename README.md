@@ -44,6 +44,11 @@ Dataset clásico de la FIFA World Cup (Kaggle): ediciones, partidos y jugadores.
   contaba como países distintos, un recordatorio de que la limpieza de datos es importante.
 - **El partido más goleador de la historia fue Austria 7–5 Suiza (1954): 12 goles**, todos en los
   90 minutos reglamentarios y 9 de ellos antes del descanso.
+- **Los dorsales no se usaron en los Mundiales hasta 1954.** Antes, los jugadores no llevaban
+  número: todos los registros con dorsal "0" corresponden exclusivamente a las ediciones de
+  1930, 1934, 1938 y 1950. Lo confirmé cruzando la tabla de jugadores con la de partidos para obtener el año.
+- **Excluyendo ese "0", el número más usado de la historia es el 1**, el dorsal del portero,
+  por ser el más fijo de cada equipo en casi todos los partidos.
 
 ##  Estructura del repositorio
 - `01_Limpieza_Fifa_WorldCup.ipynb` — limpieza de datos y primeras métricas
