@@ -26,6 +26,10 @@ Dataset clásico de la FIFA World Cup (Kaggle): ediciones, partidos y jugadores.
 - Corregí nombres de equipos corruptos (un prefijo `rn">` que arrastraba el dataset original).
 - Unifiqué "Germany FR" y "Germany" como un mismo país para que saliese correctamente los recuentos.
 - Convertí a su tipo correcto columnas numéricas mal interpretadas (asistencia y año).
+- Detecté y eliminé **filas duplicadas** que inflaban los conteos. Lo descubrí al validar el máximo
+  goleador: salían 19 goles cuando Klose marcó 16. Investigando, encontré duplicados en el fichero
+  original **multiplicados por un cruce de tablas (merge)**, y los limpié en el origen con
+  `drop_duplicates()`, verificando el resultado comparando el número de filas antes y después.
 
 ##  Hallazgos
 - **El Mundial que más llenó los estadios fue USA 1994.** Tiene el récord de asistencia
