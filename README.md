@@ -49,6 +49,9 @@ Dataset clásico de la FIFA World Cup (Kaggle): ediciones, partidos y jugadores.
   1930, 1934, 1938 y 1950. Lo confirmé cruzando la tabla de jugadores con la de partidos para obtener el año.
 - **Excluyendo ese "0", el número más usado de la historia es el 1**, el dorsal del portero,
   por ser el más fijo de cada equipo en casi todos los partidos.
+- **El dorsal 9 es el más goleador de la historia de los Mundiales** (271 goles), confirmando
+  que es el número clásico del delantero centro. Para contarlo con precisión, extraje cada gol
+  del texto de la columna de eventos (no solo los partidos en los que se marcó).
 
 ##  Estructura del repositorio
 - `01_Limpieza_Fifa_WorldCup.ipynb` — limpieza de datos y primeras métricas
