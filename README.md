@@ -35,8 +35,7 @@ Dataset clásico de la FIFA World Cup (Kaggle): ediciones, partidos y jugadores.
 - **El Mundial que más llenó los estadios fue USA 1994.** Tiene el récord de asistencia
   total de la historia (y eso que se jugaron menos partidos que sus posteriores mundiales: 24 vs 32), y al calcular la asistencia media por partido sigue siendo el número uno:
   es el más taquillero lo mires por donde lo mires. La asistencia media por partido verifica que fue probablemente por la capacidad de los estadios.
-- **Brasil es la selección con más títulos (5).** Le siguen Italia y Alemania con 4 cada una,
-  y Argentina con 3 (incluyendo su victoria en 2022).
+- **Brasil es la selección con más títulos (5).** Le siguen Alemania e Italia (18) y Argentina (16) (incluyendo su victoria en 2022).
 - **Lección de limpieza de datos:** en los datos originales, "Germany FR" (Alemania Occidental)
   y "Germany" aparecían como países distintos, lo que hacía que Alemania pareciera tener solo 3
   títulos. Al unificarlos, su recuento real subió a 4.
@@ -53,7 +52,7 @@ Dataset clásico de la FIFA World Cup (Kaggle): ediciones, partidos y jugadores.
   1930, 1934, 1938 y 1950. Lo confirmé cruzando la tabla de jugadores con la de partidos para obtener el año.
 - **Excluyendo ese "0", el número más usado de la historia es el 1**, el dorsal del portero,
   por ser el más fijo de cada equipo en casi todos los partidos.
-- **El dorsal 9 es el más goleador de la historia de los Mundiales** (271 goles), confirmando
+- **El dorsal 9 es el más goleador de la historia de los Mundiales** (256 goles), confirmando
   que es el número clásico del delantero centro. Para contarlo con precisión, extraje cada gol
   del texto de la columna de eventos (no solo los partidos en los que se marcó).
 
