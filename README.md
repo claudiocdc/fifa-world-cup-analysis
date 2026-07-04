@@ -30,8 +30,7 @@ Dataset clásico de la FIFA World Cup (Kaggle): ediciones, partidos y jugadores.
   goleador: salían 19 goles cuando Klose marcó 16. Investigando, encontré duplicados en el fichero
   original **multiplicados por un cruce de tablas (merge)**, y los limpié en el origen con
   `drop_duplicates()`, verificando el resultado comparando el número de filas antes y después.
-- **Argentina y Alemania son las selecciones más tarjeteras de la historia** (123 tarjetas cada una,
-  hasta 2014). Alemania solo llega a lo más alto tras unificar sus siglas FRG y GER
+
 
 ##  Hallazgos
 - **El Mundial que más llenó los estadios fue USA 1994.** Tiene el récord de asistencia
@@ -57,7 +56,9 @@ Dataset clásico de la FIFA World Cup (Kaggle): ediciones, partidos y jugadores.
 - **El dorsal 9 es el más goleador de la historia de los Mundiales** (256 goles), confirmando
   que es el número clásico del delantero centro. Para contarlo con precisión, extraje cada gol
   del texto de la columna de eventos (no solo los partidos en los que se marcó).
-
+- **Argentina y Alemania son las selecciones más tarjeteras de la historia** (123 tarjetas cada una,
+  hasta 2014). Alemania solo llega a lo más alto tras unificar sus siglas FRG y GER
+  
 ##  Estructura del repositorio
 - `01_Limpieza_Fifa_WorldCup.ipynb` — limpieza de datos y primeras métricas
 - `WorldCups.csv` — resumen por edición (actualizado a 2022)
