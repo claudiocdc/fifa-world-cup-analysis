@@ -36,10 +36,9 @@ Dataset clásico de la FIFA World Cup (Kaggle): ediciones, partidos y jugadores.
  
 
 ##  Hallazgos
-- **USA 1994, el Mundial con mayor asistencia total (1930–2022).** Ostenta el récord de asistencia
+- **USA 1994, el Mundial con mayor asistencia total (1930–2022).** Tiene el récord de asistencia
   total pese a tener menos equipos y partidos que los recientes (24 equipos / 52 partidos, frente a
-  32 / 64). En asistencia media por partido también es el nº1, lo que apunta a la gran capacidad de
-  los estadios estadounidenses como causa.
+  32 / 64). En asistencia media por partido también es el º1, lo que apunta a que probablemente sea por la capacidad de los estadios.
 - **Brasil, la selección con más títulos (5), 1930–2022.** Le siguen Italia y Alemania (4 títulos
   cada una) y Argentina (3, incluida su victoria en 2022).
 - **Lección de limpieza de datos:** en los datos originales, "Germany FR" (Alemania Occidental) y
@@ -49,8 +48,7 @@ Dataset clásico de la FIFA World Cup (Kaggle): ediciones, partidos y jugadores.
   (18) y Argentina (16). Lo calculé combinando apariciones como local y visitante y contando los años
   únicos de cada país.
 - **Alemania, máxima goleadora (1930–2014)**, por delante de Brasil. Este dato solo aparece tras
-  unificar "Germany FR" y "Germany", que el dataset contaba como países distintos — un recordatorio
-  de que la limpieza de datos importa.
+  unificar "Germany FR" y "Germany", que el dataset contaba como países distintos.
 - **El partido más goleador (1930–2014): Austria 7–5 Suiza (1954), 12 goles**, todos en los 90
   minutos reglamentarios y 9 de ellos antes del descanso.
 - **Los dorsales no se usaron en los Mundiales hasta 1954.** Antes, los jugadores no llevaban número:
@@ -59,7 +57,7 @@ Dataset clásico de la FIFA World Cup (Kaggle): ediciones, partidos y jugadores.
 - **Excluyendo ese "0", el número más usado (1930–2014) es el 1**, el dorsal del portero, por ser el
   más fijo de cada equipo en casi todos los partidos.
 - **El dorsal 9 es el más goleador (1930–2014)** (256 goles), confirmando que es el número clásico del
-  delantero centro. Para contarlo con precisión, extraje cada gol del texto de la columna de eventos.
+  delantero centro.
 - **Argentina y Alemania, las selecciones más tarjeteras (1930–2014)** (123 tarjetas cada una).
   Alemania solo llega a lo más alto tras unificar sus siglas FRG y GER.
 - **El fútbol se ha vuelto menos goleador con los años (1930–2022).** Correlación negativa fuerte
@@ -67,9 +65,9 @@ Dataset clásico de la FIFA World Cup (Kaggle): ediciones, partidos y jugadores.
   ha caído hasta el ~2,5 actual. El año no es la causa, sino que refleja la evolución táctica del juego
   (correlación ≠ causalidad).
 - **"Los goleadores son los más sucios": una ilusión estadística (1930–2014).** La correlación bruta
-  entre goles y tarjetas por selección era fuerte (0,84), pero al normalizar por partidos jugados cae
+  entre goles y tarjetas por selección era fuerte (0,84), **pero** al normalizar por partidos jugados cae
   a -0,30. La relación aparente la causaba el número de partidos disputados: los equipos que llegan
-  lejos acumulan más de todo.
+  lejos acumulan más de todo, no existe dicha correlación entre goles y tarjetas.
   
 ##  Estructura del repositorio
 - `01_Limpieza_Fifa_WorldCup.ipynb` — limpieza de datos y primeras métricas
