@@ -51,7 +51,7 @@ Dataset clásico de la FIFA World Cup (Kaggle): ediciones, partidos y jugadores.
   unificar "Germany FR" y "Germany", que el dataset contaba como países distintos.
 - **El partido más goleador (1930–2014): Austria 7–5 Suiza (1954), 12 goles**, todos en los 90
   minutos reglamentarios y 9 de ellos antes del descanso.
-- **Los dorsales no se usaron en los Mundiales hasta 1954.** Antes, los jugadores no llevaban número:
+- **Los dorsales permanentes no se usaron hasta 1954 (en 1950 hubo numeración, pero no fija)** Antes, los jugadores no llevaban número:
   todos los registros con dorsal "0" corresponden a las ediciones de 1930, 1934, 1938 y 1950. Lo
   confirmé cruzando la tabla de jugadores con la de partidos para obtener el año.
 - **Excluyendo ese "0", el número más usado (1930–2014) es el 1**, el dorsal del portero, por ser el
