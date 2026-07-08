@@ -58,6 +58,13 @@ Dataset clásico de la FIFA World Cup (Kaggle): ediciones, partidos y jugadores.
   del texto de la columna de eventos (no solo los partidos en los que se marcó).
 - **Argentina y Alemania son las selecciones más tarjeteras de la historia** (123 tarjetas cada una,
   hasta 2014). Alemania solo llega a lo más alto tras unificar sus siglas FRG y GER
+- **El fútbol se ha vuelto menos goleador con los años.** Hay una correlación negativa fuerte
+  (-0,75) entre el año y los goles por partido: el pico fue 1954 (~5,4 goles por partido) y desde
+  entonces ha ido cayendo hasta el ~2,5 actual.
+  Esto no significa que los años sean la causa sino sino que refleja la evolución táctica del juego. (correlación ≠ causalidad).
+- **"Los goleadores son los más sucios": una ilusión estadística** (hasta 2014). La correlación bruta
+  entre goles y tarjetas por selección era fuerte (0,84), pero al normalizar por partidos jugados cae a
+  -0,30. La relación aparente la causaba la causaba el número de partidos disputados: los equipos que llegan lejos acumulan más de todo.
   
 ##  Estructura del repositorio
 - `01_Limpieza_Fifa_WorldCup.ipynb` — limpieza de datos y primeras métricas
