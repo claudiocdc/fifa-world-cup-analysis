@@ -78,6 +78,6 @@ Dataset clásico de la FIFA World Cup (Kaggle): ediciones, partidos y jugadores.
 ## Validación
 Los hallazgos principales se han contrastado con fuentes oficiales (FIFA, Wikipedia, Guinness)
 y son consistentes con los registros históricos, respetando el alcance de cada dato:
-el resumen por edición llega hasta 2022; el detalle de partidos y jugadores, hasta 2014.
+**el resumen por edición llega hasta 2022; el detalle de partidos y jugadores, hasta 2014.**
 
 
