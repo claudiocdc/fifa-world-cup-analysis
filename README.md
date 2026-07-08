@@ -36,38 +36,40 @@ Dataset clásico de la FIFA World Cup (Kaggle): ediciones, partidos y jugadores.
  
 
 ##  Hallazgos
-- **El Mundial que más llenó los estadios fue USA 1994.** Tiene el récord de asistencia
-  total de la historia (y eso que se jugaron menos partidos que sus posteriores mundiales: 24 vs 32), y al calcular la asistencia media por partido sigue siendo el número uno:
-  es el más taquillero lo mires por donde lo mires. La asistencia media por partido verifica que fue probablemente por la capacidad de los estadios.
-- **Brasil es la selección con más títulos (5).** Le siguen Alemania e Italia (18) y Argentina (16) (incluyendo su victoria en 2022).
-- **Lección de limpieza de datos:** en los datos originales, "Germany FR" (Alemania Occidental)
-  y "Germany" aparecían como países distintos, lo que hacía que Alemania pareciera tener solo 3
-  títulos. Al unificarlos, su recuento real subió a 4.
-- **Brasil es la única selección que ha jugado las 20 ediciones (1930–2014).**
-  Le siguen Italia (18) y Argentina (16). Lo calculé combinando las apariciones
-  como local y visitante (partidos) y contando los años únicos de cada país.
-- **Alemania es la máxima goleadora de la historia de los Mundiales**, por delante de Brasil.
-  Curiosamente, este dato solo aparece tras unificar "Germany FR" y "Germany", que el dataset
-  contaba como países distintos, un recordatorio de que la limpieza de datos es importante.
-- **El partido más goleador de la historia fue Austria 7–5 Suiza (1954): 12 goles**, todos en los
-  90 minutos reglamentarios y 9 de ellos antes del descanso.
-- **Los dorsales no se usaron en los Mundiales hasta 1954.** Antes, los jugadores no llevaban
-  número: todos los registros con dorsal "0" corresponden exclusivamente a las ediciones de
-  1930, 1934, 1938 y 1950. Lo confirmé cruzando la tabla de jugadores con la de partidos para obtener el año.
-- **Excluyendo ese "0", el número más usado de la historia es el 1**, el dorsal del portero,
-  por ser el más fijo de cada equipo en casi todos los partidos.
-- **El dorsal 9 es el más goleador de la historia de los Mundiales** (256 goles), confirmando
-  que es el número clásico del delantero centro. Para contarlo con precisión, extraje cada gol
-  del texto de la columna de eventos (no solo los partidos en los que se marcó).
-- **Argentina y Alemania son las selecciones más tarjeteras de la historia** (123 tarjetas cada una,
-  hasta 2014). Alemania solo llega a lo más alto tras unificar sus siglas FRG y GER
-- **El fútbol se ha vuelto menos goleador con los años.** Hay una correlación negativa fuerte
-  (-0,75) entre el año y los goles por partido: el pico fue 1954 (~5,4 goles por partido) y desde
-  entonces ha ido cayendo hasta el ~2,5 actual.
-  Esto no significa que los años sean la causa sino sino que refleja la evolución táctica del juego. (correlación ≠ causalidad).
-- **"Los goleadores son los más sucios": una ilusión estadística** (hasta 2014). La correlación bruta
-  entre goles y tarjetas por selección era fuerte (0,84), pero al normalizar por partidos jugados cae a
-  -0,30. La relación aparente la causaba la causaba el número de partidos disputados: los equipos que llegan lejos acumulan más de todo.
+- **USA 1994, el Mundial con mayor asistencia total (1930–2022).** Ostenta el récord de asistencia
+  total pese a tener menos equipos y partidos que los recientes (24 equipos / 52 partidos, frente a
+  32 / 64). En asistencia media por partido también es el nº1, lo que apunta a la gran capacidad de
+  los estadios estadounidenses como causa.
+- **Brasil, la selección con más títulos (5), 1930–2022.** Le siguen Italia y Alemania (4 títulos
+  cada una) y Argentina (3, incluida su victoria en 2022).
+- **Lección de limpieza de datos:** en los datos originales, "Germany FR" (Alemania Occidental) y
+  "Germany" aparecían como países distintos, lo que hacía que Alemania pareciera tener solo 3 títulos.
+  Al unificarlos, su recuento real subió a 4.
+- **Brasil, única selección presente en las 20 ediciones (1930–2014).** Le siguen Alemania e Italia
+  (18) y Argentina (16). Lo calculé combinando apariciones como local y visitante y contando los años
+  únicos de cada país.
+- **Alemania, máxima goleadora (1930–2014)**, por delante de Brasil. Este dato solo aparece tras
+  unificar "Germany FR" y "Germany", que el dataset contaba como países distintos — un recordatorio
+  de que la limpieza de datos importa.
+- **El partido más goleador (1930–2014): Austria 7–5 Suiza (1954), 12 goles**, todos en los 90
+  minutos reglamentarios y 9 de ellos antes del descanso.
+- **Los dorsales no se usaron en los Mundiales hasta 1954.** Antes, los jugadores no llevaban número:
+  todos los registros con dorsal "0" corresponden a las ediciones de 1930, 1934, 1938 y 1950. Lo
+  confirmé cruzando la tabla de jugadores con la de partidos para obtener el año.
+- **Excluyendo ese "0", el número más usado (1930–2014) es el 1**, el dorsal del portero, por ser el
+  más fijo de cada equipo en casi todos los partidos.
+- **El dorsal 9 es el más goleador (1930–2014)** (256 goles), confirmando que es el número clásico del
+  delantero centro. Para contarlo con precisión, extraje cada gol del texto de la columna de eventos.
+- **Argentina y Alemania, las selecciones más tarjeteras (1930–2014)** (123 tarjetas cada una).
+  Alemania solo llega a lo más alto tras unificar sus siglas FRG y GER.
+- **El fútbol se ha vuelto menos goleador con los años (1930–2022).** Correlación negativa fuerte
+  (-0,75) entre el año y los goles por partido: el pico fue 1954 (~5,4 goles/partido) y desde entonces
+  ha caído hasta el ~2,5 actual. El año no es la causa, sino que refleja la evolución táctica del juego
+  (correlación ≠ causalidad).
+- **"Los goleadores son los más sucios": una ilusión estadística (1930–2014).** La correlación bruta
+  entre goles y tarjetas por selección era fuerte (0,84), pero al normalizar por partidos jugados cae
+  a -0,30. La relación aparente la causaba el número de partidos disputados: los equipos que llegan
+  lejos acumulan más de todo.
   
 ##  Estructura del repositorio
 - `01_Limpieza_Fifa_WorldCup.ipynb` — limpieza de datos y primeras métricas
