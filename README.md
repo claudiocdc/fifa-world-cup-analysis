@@ -72,6 +72,8 @@ Dataset clásico de la FIFA World Cup (Kaggle): ediciones, partidos y jugadores.
 
 El proyecto se presenta en un dashboard de **dos páginas** construido en Power BI.
 
+![Demo del dashboard](img/demo_dashboard.gif)
+
 **Página General** — panorámica de la historia de los Mundiales (récords, tendencias, rankings):
 
 ![Dashboard General](Dashboard_General.png)
