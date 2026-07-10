@@ -11,8 +11,7 @@ Explorar y limpiar datos históricos de los Mundiales para responder preguntas c
 ##  Herramientas
 - **Python** (pandas) para limpieza y análisis
 - **Google Colab** como entorno de trabajo
-- *(Próximamente)* Power BI para el dashboard final
-
+- **Power BI** para representar dashboard interactivo de 2 páginas
 ##  Datos
 Dataset clásico de la FIFA World Cup (Kaggle): ediciones, partidos y jugadores.
 
@@ -69,15 +68,33 @@ Dataset clásico de la FIFA World Cup (Kaggle): ediciones, partidos y jugadores.
   a -0,30. La relación aparente la causaba el número de partidos disputados: los equipos que llegan
   lejos acumulan más de todo, no existe dicha correlación entre goles y tarjetas.
   
+## Dashboard interactivo (Power BI)
+
+El proyecto se presenta en un dashboard de **dos páginas** construido en Power BI.
+
+**Página General** — panorámica de la historia de los Mundiales (récords, tendencias, rankings):
+
+![Dashboard General](Dashboard_General.png)
+
+**Página España** — *Mini página* sobre la selección española (goleadores, evolución, hitos):
+
+![Dashboard España](Dashboard_España.png)
+  
+  
 ##  Estructura del repositorio
-- `01_Limpieza_Fifa_WorldCup.ipynb` — limpieza de datos y primeras métricas
-- `WorldCups.csv` — resumen por edición (actualizado a 2022)
-- `WorldCupMatches.csv` — detalle de partidos (hasta 2014)
-- `WorldCupPlayers.csv` — detalle de jugadores (hasta 2014)
+- `01_Limpieza_Fifa_WorldCup.ipynb` — notebook con limpieza, EDA, correlaciones y validación
+- `dashboard_mundial.pbix` — dashboard interactivo (Power BI)
+- `data/` (raíz) — datos crudos originales (`WorldCups.csv`, `WorldCupMatches.csv`, `WorldCupPlayers.csv`)
+- `data_clean/` — datos limpios y derivados (resúmenes para el dashboard)
+- `Dashboard_General.png` / `Dashboard_España.png` — capturas del dashboard
 
 ## Validación
 Los hallazgos principales se han contrastado con fuentes oficiales (FIFA, Wikipedia, Guinness)
 y son consistentes con los registros históricos, respetando el alcance de cada dato:
 **el resumen por edición llega hasta 2022; el detalle de partidos y jugadores, hasta 2014.**
 
+## Posibles mejoras
+- Ampliar el detalle de partidos y jugadores hasta 2022 (ahora mismo solo el resumen por edición llega a 2022; el detalle se corta en 2014).
+- Afinar el conteo de goles y tarjetas: el método por eventos se queda algo corto en penaltis frente a las cifras oficiales (p. ej. Klose sale 16, exacto; Villa sale 7 cuando la cifra real es 9).
+- Replicar el apartado de España para otras selecciones (páginas adicionales del dashboard).
 
